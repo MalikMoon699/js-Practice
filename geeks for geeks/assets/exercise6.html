@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise6</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/homeStyle.css">
+</head>
+<body>
+        <header>
+      <h2>Exercise</h2>
+      <ul>
+        <li><a href="exercise1.html">Exercise 1</a></li>
+        <li><a href="exercise2.html">Exercise 2</a></li>
+        <li><a href="exercise3.html">Exercise 3</a></li>
+        <li><a href="exercise4.html">Exercise 4</a></li>
+        <li><a href="exercise5.html">Exercise 5</a></li>
+        <li>Exercise 6</li>
+        <li><a href="exercise7.html">Exercise 7</a></li>
+        <li><a href="exercise8.html">Exercise 8</a></li>
+      </ul>
+    </header>
+    <section class="main">
+    <h2>Resize & Compress Image</h2>
+    <input type="file" id="imageInput" accept="image/*">
+    <br>
+    <label>Width: <input type="number" id="width" value="300"></label>
+    <label>Height: <input type="number" id="height" value="300"></label>
+    <label>Quality (0.1 - 1): <input type="number" id="quality" step="0.1" value="0.8"></label>
+    <br>
+    <button onclick="processImage()">Resize & Compress</button>
+    <button id="downloadBtn" style="display: none;">Download</button>
+    <br>
+    <canvas id="canvas"></canvas>
+    <img id="outputImage" style="max-width: 100%; margin-top: 10px;">
+
+    </section>
+    <script src="js/exercise6.js"></script>
+</body>
+</html>
+

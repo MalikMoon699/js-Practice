@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise1</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/homeStyle.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Exercise</h2>
+      <ul>
+        <li>Exercise 1</li>
+        <li><a href="exercise2.html">Exercise 2</a></li>
+        <li><a href="exercise3.html">Exercise 3</a></li>
+        <li><a href="exercise4.html">Exercise 4</a></li>
+        <li><a href="exercise5.html">Exercise 5</a></li>
+        <li><a href="exercise6.html">Exercise 6</a></li>
+        <li><a href="exercise7.html">Exercise 7</a></li>
+        <li><a href="exercise8.html">Exercise 8</a></li>
+      </ul>
+    </header>
+    <!-- Employee Database Management System -->
+    <section class="main">
+      <h2>Employee Database Management</h2>
+      <input type="text" id="name" placeholder="Employee Name" />
+      <input type="text" id="position" placeholder="Position" />
+      <input type="number" id="salary" placeholder="Salary" />
+      <button class="btn" onclick="addEmployee()">Add Employee</button>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Salary</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="employeeTable"></tbody>
+      </table>
+    </section>
+    <script src="js/exercise1.js"></script>
+  </body>
+</html>
