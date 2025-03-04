@@ -12,13 +12,14 @@ const addTask = () => {
   taskText.innerHTML = `${taskInput} - <small>${taskDate}</small>`;
 
   let completeBtn = document.createElement("button");
-  completeBtn.innerText = "True";
+  completeBtn.innerText = "false";
   completeBtn.onclick = () => {
+    completeBtn.innerText = "True";
     taskText.classList.toggle("completed");
   };
 
   let deleteBtn = document.createElement("button");
-  deleteBtn.innerText = "false";
+  deleteBtn.innerText = "remove";
   deleteBtn.onclick = () => {
     taskDiv.remove();
   };
